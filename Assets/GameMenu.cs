@@ -9,6 +9,13 @@ public class GameMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    public void RollChar()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+
+
+    }
+
     public void QuitGame()
     {
         Debug.Log("QUIT");
@@ -18,5 +25,10 @@ public class GameMenu : MonoBehaviour
     public void Back()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
+    public void RollCharBack()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 }
